@@ -32,7 +32,7 @@ Lower `val_bpb` indicates better validation performance.
 Each experiment must run under the same resource constraints:
 
 ```text
-training budget: 5 minutes wall-clock training time
+training budget: 180 seconds wall-clock training time
 hard timeout: 10 minutes total runtime
 device: one local GPU, Apple Silicon MPS device, or CPU if no accelerator is available
 soft memory limit: 8 GB
@@ -160,7 +160,7 @@ The agent must verify that:
 The initial `results.tsv` header must be:
 
 ```text
-commit	val_bpb	memory_gb	params_M	steps	status	complexity_delta	description
+experiment_id	commit	val_bpb	memory_gb	params_M	steps	status	description
 ```
 
 ## 4. Output Format
@@ -191,7 +191,7 @@ After every experiment, the agent must append one row to `results.tsv`.
 The format is:
 
 ```text
-commit	val_bpb	memory_gb	params_M	steps	status	complexity_delta	description
+experiment_id	commit	val_bpb	memory_gb	params_M	steps	status	description
 ```
 
 Column definitions:
