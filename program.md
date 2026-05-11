@@ -2,7 +2,7 @@
 
 This document defines an autonomous research workflow for improving a small language model trained on the TinyStories GPT-4 Clean dataset. The workflow is modeled after Andrej Karpathy's autoresearch paradigm: the agent modifies only the experiment code, runs fixed-budget experiments, evaluates each change using a single metric, and keeps only changes that improve performance under controlled conditions.
 
-Dataset: `karpathy/tinystories-gpt4-clean`  
+Dataset: `karpathy/tinystories-gpt4-clean` (https://huggingface.co/datasets/karpathy/tinystories-gpt4-clean/tree/main) 
 Primary metric: validation bits per byte (`val_bpb`)  
 Goal: minimize `val_bpb`
 
