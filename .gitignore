@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.cache/
+data/
+checkpoints/
+*.pt
+*.pth
+*.bin
+run.log
+.DS_Store

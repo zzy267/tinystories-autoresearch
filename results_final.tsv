@@ -1,0 +1,8 @@
+experiment_id    commit    val_bpb    memory_gb    params_M    steps    status    description
+0    baseline    2.938290    0.00    0.479    596    keep    baseline byte-level language model
+1    exp_001    2.550856    0.00    0.479    512    keep    Increase LR to 1e-3
+2    exp_002    3.040980    0.00    0.876    270    discard    4 layers
+3    exp_003    3.334591    0.00    0.479    129    discard    Gradient accumulation
+4    exp_004    2.594891    0.00    1.744    264    discard    Embedding dim 256
+5    exp_005    3.097949    0.00    0.479    501    discard    Cosine annealing scheduler
+6    exp_006    2.532282    0.00    0.479    466    keep    Reduce dropout to 0.05
